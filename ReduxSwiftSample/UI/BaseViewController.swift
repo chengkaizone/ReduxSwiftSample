@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseViewController.swift
 //  ReduxSwiftSample
 //
 //  Created by tony on 2020/1/8.
@@ -8,19 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    
+class BaseViewController: UIViewController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
     
-    @IBAction func loginAction(_ sender: UIButton) {
-    }
-    
-    @IBAction func registerAction(_ sender: UIButton) {
-    }
 }
-
