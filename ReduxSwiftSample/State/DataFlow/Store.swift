@@ -25,6 +25,9 @@ class Store: ObservableObject {
         
         let result = AccountReducer.reduce(state: appState, action: action)
         appState = result.0
+        
+        NSLog("[通知UI更新--》]")
+        // 这里需要发出去更新UI
         if let command = result.1 {
             command.execute(in: self)
         }

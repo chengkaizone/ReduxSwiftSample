@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+* 用户注册
+ */
 class RegisterViewController: BaseViewController {
     
     
@@ -24,7 +27,11 @@ class RegisterViewController: BaseViewController {
     
     @IBAction func registerAction(_ sender: UIButton) {
         
+        let username = usernameField.text!
+        let password = passwordField.text!
+        let passwordVerify = passwordVerifyField.text!
         
+        AppDelegate.shared().store.dispatch(action: .register(username: username, password: password, passwordVerify: passwordVerify))
     }
     
 }

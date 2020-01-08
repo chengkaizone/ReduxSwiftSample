@@ -27,6 +27,9 @@
 		EAB7C2F823C5BA3800A78A01 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C2F723C5BA3800A78A01 /* RegisterRequest.swift */; };
 		EAB7C2FA23C5BA4800A78A01 /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C2F923C5BA4800A78A01 /* LogoutRequest.swift */; };
 		EAB7C2FD23C5CD0000A78A01 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C2FC23C5CD0000A78A01 /* UIStoryboardExtension.swift */; };
+		EAB7C2FF23C5D86400A78A01 /* LoginAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C2FE23C5D86400A78A01 /* LoginAppCommand.swift */; };
+		EAB7C30123C5D8EA00A78A01 /* RegisterAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C30023C5D8EA00A78A01 /* RegisterAppCommand.swift */; };
+		EAB7C30323C5D90E00A78A01 /* LogoutAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C30223C5D90E00A78A01 /* LogoutAppCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		EAB7C2F723C5BA3800A78A01 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		EAB7C2F923C5BA4800A78A01 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 		EAB7C2FC23C5CD0000A78A01 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		EAB7C2FE23C5D86400A78A01 /* LoginAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppCommand.swift; sourceTree = "<group>"; };
+		EAB7C30023C5D8EA00A78A01 /* RegisterAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAppCommand.swift; sourceTree = "<group>"; };
+		EAB7C30223C5D90E00A78A01 /* LogoutAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAppCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 			isa = PBXGroup;
 			children = (
 				EAB7C2EB23C5B53300A78A01 /* AppCommand.swift */,
+				EAB7C2FE23C5D86400A78A01 /* LoginAppCommand.swift */,
+				EAB7C30023C5D8EA00A78A01 /* RegisterAppCommand.swift */,
+				EAB7C30223C5D90E00A78A01 /* LogoutAppCommand.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -245,8 +254,11 @@
 				EAB7C2EA23C5B52500A78A01 /* AppAction.swift in Sources */,
 				EAB7C2F623C5BA2700A78A01 /* LoginRequest.swift in Sources */,
 				EAB7C2F423C5B63400A78A01 /* AccountReducer.swift in Sources */,
+				EAB7C30123C5D8EA00A78A01 /* RegisterAppCommand.swift in Sources */,
 				EAB7C2CC23C5B36200A78A01 /* ViewController.swift in Sources */,
+				EAB7C30323C5D90E00A78A01 /* LogoutAppCommand.swift in Sources */,
 				EAB7C2C823C5B36200A78A01 /* AppDelegate.swift in Sources */,
+				EAB7C2FF23C5D86400A78A01 /* LoginAppCommand.swift in Sources */,
 				EAB7C2CA23C5B36200A78A01 /* SceneDelegate.swift in Sources */,
 				EAB7C2F123C5B5C300A78A01 /* User.swift in Sources */,
 				EAB7C2EE23C5B54000A78A01 /* AppError.swift in Sources */,
