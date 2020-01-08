@@ -22,9 +22,11 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
+        
     }
     
     @IBAction func logoutAction(_ sender: UIButton) {
+        
     }
     
 }
