@@ -13,14 +13,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "首页"
     }
-
     
     @IBAction func loginAction(_ sender: UIButton) {
+        
+        let control = UIStoryboard.initFromStoryboard(LoginViewController.self)
+        self.navigationController?.pushViewController(control, animated: true)
     }
     
     @IBAction func registerAction(_ sender: UIButton) {
+        
+        let control = UIStoryboard.initFromStoryboard(RegisterViewController.self)
+        self.navigationController?.pushViewController(control, animated: true)
     }
 }
 

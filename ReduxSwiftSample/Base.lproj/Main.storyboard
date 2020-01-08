@@ -10,22 +10,20 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-YN-OS5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-YN-OS5">
                                 <rect key="frame" x="176" y="342" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="用户登录"/>
                                 <connections>
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPe-Z3-iP6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-uy-8QN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-uy-8QN">
                                 <rect key="frame" x="176" y="433" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="用户注册"/>
                                 <connections>
                                     <action selector="registerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFh-ws-wQz"/>
@@ -33,6 +31,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rjd-YN-OS5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="Rnj-ZN-RRY"/>
+                            <constraint firstItem="ieq-uy-8QN" firstAttribute="top" secondItem="rjd-YN-OS5" secondAttribute="bottom" constant="61" id="UZr-e8-aG8"/>
+                            <constraint firstItem="rjd-YN-OS5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dSR-GP-xWz"/>
+                            <constraint firstItem="ieq-uy-8QN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gXY-eO-Keo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -43,7 +47,7 @@
         <!--Login View Controller-->
         <scene sceneID="pC9-SE-ogy">
             <objects>
-                <viewController id="okb-bD-oHZ" customClass="LoginViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="okb-bD-oHZ" customClass="LoginViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Nn-gv-dga">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +120,7 @@
         <!--Register View Controller-->
         <scene sceneID="bRA-xG-Lpo">
             <objects>
-                <viewController id="Z2b-5b-PWj" customClass="RegisterViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="Z2b-5b-PWj" customClass="RegisterViewController" customModule="ReduxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Scz-dc-2rC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
