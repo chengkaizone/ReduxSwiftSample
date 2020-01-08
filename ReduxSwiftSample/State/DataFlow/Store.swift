@@ -11,10 +11,6 @@ import Combine
 
 class Store: ObservableObject {
     
-//    var shared: Store {
-//
-//    }
-    
     var appState: AppState = AppState()
     
     func dispatch(action: AppAction) {

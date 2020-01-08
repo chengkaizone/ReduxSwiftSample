@@ -118,11 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				EAB7C2F223C5B61D00A78A01 /* Command */,
+				EAB7C30423C5DFB100A78A01 /* Reduce */,
 				EAB7C2E523C5B50B00A78A01 /* Store.swift */,
 				EAB7C2E723C5B51600A78A01 /* AppState.swift */,
 				EAB7C2E923C5B52500A78A01 /* AppAction.swift */,
 				EAB7C2ED23C5B54000A78A01 /* AppError.swift */,
-				EAB7C2F323C5B63400A78A01 /* AccountReducer.swift */,
 			);
 			path = DataFlow;
 			sourceTree = "<group>";
@@ -172,6 +172,14 @@
 				EAB7C2FC23C5CD0000A78A01 /* UIStoryboardExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EAB7C30423C5DFB100A78A01 /* Reduce */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7C2F323C5B63400A78A01 /* AccountReducer.swift */,
+			);
+			path = Reduce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
