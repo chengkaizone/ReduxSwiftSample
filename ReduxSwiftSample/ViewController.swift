@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        self.title = "首页"
     }
     
     @IBAction func loginAction(_ sender: UIButton) {

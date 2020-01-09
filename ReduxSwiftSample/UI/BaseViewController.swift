@@ -8,14 +8,26 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+let NOTIFICATION_CHANGE_STATE = "change_state"
+@objc class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(onChangedState(_:)), name: NSNotification.Name(NOTIFICATION_CHANGE_STATE), object: nil)
     }
     
-    func onChangedState(action: AppAction, state: AppState) {
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc private func onChangedState(_ notification: Notification) {
+        
+        let result = notification.object as! (AppAction, AppState)
+        
+        onChangeState(action: result.0, state: result.1)
+    }
+    
+    func onChangeState(action: AppAction, state: AppState) {
         
     }
     

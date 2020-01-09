@@ -8,11 +8,15 @@
 
 import Foundation
 
-enum AppError: Error {
+struct AppError: Error {
     
-    case success(message: String)
-    case failed(error: String)
-    case networkingFailure(error: Error)
+    var message: String
+    var error: Error?
+    
+    init(_ message: String, error: Error? = nil) {
+        self.message = message
+        self.error = error
+    }
 }
 
 

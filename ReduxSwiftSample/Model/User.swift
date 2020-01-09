@@ -12,4 +12,8 @@ struct User {
     
     var username: String
     var password: String
+    
+    func toString() -> String {
+        return "Username: \(username) Password: \(password)"
+    }
 }
