@@ -13,6 +13,14 @@ class Store: ObservableObject {
     
     var appState: AppState = AppState()
     
+    init() {
+        self.setupObservers()
+    }
+    
+    func setupObservers() {
+        
+    }
+    
     func dispatch(action: AppAction) {
         
         #if DEBUG
@@ -37,4 +45,19 @@ class Store: ObservableObject {
         }
     }
     
+}
+
+fileprivate class DisposeBag {
+    
+    private var values: [AnyCancellable] = []
+    func add(_ value: AnyCancellable) {
+        values.append(value)
+    }
+}
+
+fileprivate extension AnyCancellable {
+    
+    func add(to bag: DisposeBag) {
+        bag.add(self)
+    }
 }

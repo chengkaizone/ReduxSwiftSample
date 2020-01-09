@@ -30,6 +30,10 @@
 		EAB7C2FF23C5D86400A78A01 /* LoginAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C2FE23C5D86400A78A01 /* LoginAppCommand.swift */; };
 		EAB7C30123C5D8EA00A78A01 /* RegisterAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C30023C5D8EA00A78A01 /* RegisterAppCommand.swift */; };
 		EAB7C30323C5D90E00A78A01 /* LogoutAppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7C30223C5D90E00A78A01 /* LogoutAppCommand.swift */; };
+		EAF95C7F23C6DA9A000CFC12 /* EmailCheckingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF95C7E23C6DA9A000CFC12 /* EmailCheckingRequest.swift */; };
+		EAF95C8423C6E4A4000CFC12 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF95C8323C6E4A4000CFC12 /* FileStorage.swift */; };
+		EAF95C8723C6E4F2000CFC12 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF95C8623C6E4F2000CFC12 /* FileHelper.swift */; };
+		EAF95C8923C6E5B7000CFC12 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF95C8823C6E5B7000CFC12 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		EAB7C2FE23C5D86400A78A01 /* LoginAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppCommand.swift; sourceTree = "<group>"; };
 		EAB7C30023C5D8EA00A78A01 /* RegisterAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAppCommand.swift; sourceTree = "<group>"; };
 		EAB7C30223C5D90E00A78A01 /* LogoutAppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAppCommand.swift; sourceTree = "<group>"; };
+		EAF95C7E23C6DA9A000CFC12 /* EmailCheckingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckingRequest.swift; sourceTree = "<group>"; };
+		EAF95C8323C6E4A4000CFC12 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		EAF95C8623C6E4F2000CFC12 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		EAF95C8823C6E5B7000CFC12 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +98,11 @@
 		EAB7C2C623C5B36200A78A01 /* ReduxSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				EAB7C2DB23C5B3B300A78A01 /* State */,
+				EAB7C2DE23C5B3ED00A78A01 /* UI */,
+				EAF95C8523C6E4E2000CFC12 /* Util */,
 				EAB7C2FB23C5CCE100A78A01 /* Extension */,
 				EAB7C2EF23C5B5B800A78A01 /* Model */,
-				EAB7C2DE23C5B3ED00A78A01 /* UI */,
-				EAB7C2DB23C5B3B300A78A01 /* State */,
 				EAB7C2C723C5B36200A78A01 /* AppDelegate.swift */,
 				EAB7C2C923C5B36200A78A01 /* SceneDelegate.swift */,
 				EAB7C2CB23C5B36200A78A01 /* ViewController.swift */,
@@ -109,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				EAB7C2DC23C5B3C000A78A01 /* DataFlow */,
-				EAB7C2DD23C5B3D800A78A01 /* Netwotking */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -117,6 +125,8 @@
 		EAB7C2DC23C5B3C000A78A01 /* DataFlow */ = {
 			isa = PBXGroup;
 			children = (
+				EAF95C8223C6E48A000CFC12 /* FileIO */,
+				EAB7C2DD23C5B3D800A78A01 /* Netwotking */,
 				EAB7C2F223C5B61D00A78A01 /* Command */,
 				EAB7C30423C5DFB100A78A01 /* Reduce */,
 				EAB7C2E523C5B50B00A78A01 /* Store.swift */,
@@ -133,6 +143,7 @@
 				EAB7C2F523C5BA2700A78A01 /* LoginRequest.swift */,
 				EAB7C2F723C5BA3800A78A01 /* RegisterRequest.swift */,
 				EAB7C2F923C5BA4800A78A01 /* LogoutRequest.swift */,
+				EAF95C7E23C6DA9A000CFC12 /* EmailCheckingRequest.swift */,
 			);
 			path = Netwotking;
 			sourceTree = "<group>";
@@ -180,6 +191,23 @@
 				EAB7C2F323C5B63400A78A01 /* AccountReducer.swift */,
 			);
 			path = Reduce;
+			sourceTree = "<group>";
+		};
+		EAF95C8223C6E48A000CFC12 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				EAF95C8323C6E4A4000CFC12 /* FileStorage.swift */,
+			);
+			path = FileIO;
+			sourceTree = "<group>";
+		};
+		EAF95C8523C6E4E2000CFC12 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EAF95C8623C6E4F2000CFC12 /* FileHelper.swift */,
+				EAF95C8823C6E5B7000CFC12 /* Helpers.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +292,16 @@
 				EAB7C2F423C5B63400A78A01 /* AccountReducer.swift in Sources */,
 				EAB7C30123C5D8EA00A78A01 /* RegisterAppCommand.swift in Sources */,
 				EAB7C2CC23C5B36200A78A01 /* ViewController.swift in Sources */,
+				EAF95C8723C6E4F2000CFC12 /* FileHelper.swift in Sources */,
+				EAF95C8423C6E4A4000CFC12 /* FileStorage.swift in Sources */,
+				EAF95C8923C6E5B7000CFC12 /* Helpers.swift in Sources */,
 				EAB7C30323C5D90E00A78A01 /* LogoutAppCommand.swift in Sources */,
 				EAB7C2C823C5B36200A78A01 /* AppDelegate.swift in Sources */,
 				EAB7C2FF23C5D86400A78A01 /* LoginAppCommand.swift in Sources */,
 				EAB7C2CA23C5B36200A78A01 /* SceneDelegate.swift in Sources */,
 				EAB7C2F123C5B5C300A78A01 /* User.swift in Sources */,
 				EAB7C2EE23C5B54000A78A01 /* AppError.swift in Sources */,
+				EAF95C7F23C6DA9A000CFC12 /* EmailCheckingRequest.swift in Sources */,
 				EAB7C2FD23C5CD0000A78A01 /* UIStoryboardExtension.swift in Sources */,
 				EAB7C2E423C5B42C00A78A01 /* BaseViewController.swift in Sources */,
 				EAB7C2EC23C5B53300A78A01 /* AppCommand.swift in Sources */,

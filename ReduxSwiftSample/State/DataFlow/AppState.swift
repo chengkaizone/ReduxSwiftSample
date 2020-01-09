@@ -12,6 +12,7 @@ struct AppState {
     
     var accountRequesting: Bool = false
     
+    @FileStorage(directory: .documentDirectory, fileName: "user.json")
     var user: User?
     
     var accountError: AppError?

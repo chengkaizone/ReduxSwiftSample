@@ -27,9 +27,6 @@ class AccountReducer {
             switch result {
             case .success(let user):
                 state.user = user
-                if user == nil {// 注册成功
-                    
-                }
             case .failure(let error):
                 state.accountError = error
             }
@@ -38,6 +35,9 @@ class AccountReducer {
             command = LogoutAppCommand()
         case .logoutDone:
             state.accountRequesting = false
+            state.user = nil
+        case .emailValid(let valid):
+            break
         }
         
         return (state, command)

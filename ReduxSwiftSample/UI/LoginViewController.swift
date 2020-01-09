@@ -22,6 +22,10 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         self.title = "用户登录"
         
+        if let user = AppDelegate.shared().store.appState.user {
+            usernameField.text = user.username
+            passwordField.text = user.password
+        }
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
